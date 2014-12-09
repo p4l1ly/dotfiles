@@ -1,0 +1,9 @@
+[user]
+	email = pallly.vargovcik@gmail.com
+	name = Pavol Vargovcik
+[core]
+	editor = vim
+	autocrlf = false
+	autolf = true
+[push]
+	default = simple

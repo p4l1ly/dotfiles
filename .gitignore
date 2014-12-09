@@ -1,0 +1,53 @@
+# not dotfiles
+[!.]*/*
+
+# x server crasg files
+.serverauth*
+
+# steam gaming server data
+.steam*
+
+# any history
+*_history
+.lesshst
+.vim/.netrwhist
+
+# file used by x login screens
+.Xauthority
+
+# vim swap files
+*.swp
+*.swo
+
+# vim history, etc...
+.viminfo
+
+# xmonad errors
+.xmonad/xmonad.errors
+
+# xmonad binaries
+.xmonad/xmonad-*
+
+
+# other not really configuration files
+.xdvirc
+.VirtualBox/*
+.audacity-data/*
+.cabal/
+.cache/
+.config/
+.dbus/*
+.gem/*
+.ghc/*
+.gimp*/*
+.java/*
+.npm/*
+.pki/*
+.ssh/*
+.thumbnails/*
+.vagrant.d/*
+.local/
+.macromedia/
+.mozilla/
+
+*.o

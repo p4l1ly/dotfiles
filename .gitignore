@@ -11,6 +11,7 @@
 *_history
 .lesshst
 .vim/.netrwhist
+.links/links.his
 
 # file used by x login screens
 .Xauthority
@@ -51,3 +52,9 @@
 .mozilla/
 
 *.o
+*.hi
+
+.fehbg
+.pulse-cookie
+.wine/
+.winetest/*

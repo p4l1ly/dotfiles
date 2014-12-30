@@ -1,3 +1,10 @@
+URxvt*scrollBar:   false
+URxvt*depth:       32
+URxvt*background:  rgba:0000/0000/0000/ffff
+URxvt*foreground:  rgb:ffff/ffff/ffff
+URxvt*color12:     rgb:6000/6000/ffff
+URxvt*font:        xft:Liberation Mono:style=Regular:pixelsize=13:antialias=true:hinting=true
+URxvt*letterSpace: -2
 ! URxvt*termName:                       string
 ! URxvt*geometry:                       geometry
 ! URxvt*chdir:                          string
@@ -7,7 +14,6 @@
 ! URxvt*skipScroll:                     boolean
 ! URxvt*pastableTabs:                   boolean
 ! URxvt*scrollstyle:                    mode
-! URxvt*scrollBar:                      boolean
 ! URxvt*scrollBar_right:                boolean
 ! URxvt*scrollBar_floating:             boolean
 ! URxvt*scrollBar_align:                mode
@@ -31,8 +37,6 @@
 ! URxvt*cursorUnderline:                boolean
 ! URxvt*cursorBlink:                    boolean
 ! URxvt*pointerBlank:                   boolean
-URxvt*background:                     rgb:0000/0000/0000
-URxvt*foreground:                     rgb:ffff/ffff/ffff
 ! URxvt*color0:                         color
 ! URxvt*color1:                         color
 ! URxvt*color2:                         color
@@ -45,7 +49,6 @@ URxvt*foreground:                     rgb:ffff/ffff/ffff
 ! URxvt*color9:                         color
 ! URxvt*color10:                        color
 ! URxvt*color11:                        color
-URxvt*color12:                        rgb:6000/6000/ffff
 ! URxvt*color13:                        color
 ! URxvt*color14:                        color
 ! URxvt*color15:                        color
@@ -64,7 +67,6 @@ URxvt*color12:                        rgb:6000/6000/ffff
 ! URxvt*pointerColor2:                  color
 ! URxvt*borderColor:                    color
 ! URxvt*iconFile:                       file
-URxvt*font:                           xft:Liberation Mono:style=Regular:pixelsize=13:antialias=true:hinting=true
 ! URxvt*boldFont:                       fontname
 ! URxvt*italicFont:                     fontname
 ! URxvt*boldItalicFont:                 fontname
@@ -77,7 +79,6 @@ URxvt*font:                           xft:Liberation Mono:style=Regular:pixelsiz
 ! URxvt*iconName:                       string
 ! URxvt*saveLines:                      number
 ! URxvt*buffered:                       boolean
-URxvt*depth:                          24
 ! URxvt*visual:                         number
 ! URxvt*transient-for:                  windowid
 ! URxvt*override-redirect:              boolean
@@ -86,7 +87,6 @@ URxvt*depth:                          24
 ! URxvt*internalBorder:                 number
 ! URxvt*borderLess:                     boolean
 ! URxvt*lineSpace:                      number
-URxvt*letterSpace:                    -2
 ! URxvt*skipBuiltinGlyphs:              boolean
 ! URxvt*pointerBlankDelay:              number
 ! URxvt*backspacekey:                   string

@@ -11,7 +11,8 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
   unset f
 fi
 
-xloadimage -onroot -fullscreen ~/.xmonad/background.jpg &
+compton -CGb --invert-color-include 'WM_INVERSE_COLORS:8c = 1'
 xrdb ~/.Xresources
 syndaemon -t -k -i 1 &
+feh --bg-fill ~/.background.png &
 exec xmonad

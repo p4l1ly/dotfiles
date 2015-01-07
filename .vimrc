@@ -39,3 +39,5 @@ nmap []P O<Space><BS><ESC>p
 command! -range=% Tcss <line1>,<line2>Tab /^[^:]*:/l0l1
 command! -range=% Tdm <line1>,<line2>Tab/^\s\+property\s:\w\+,
 map Y y$
+
+colorscheme dark

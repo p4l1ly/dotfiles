@@ -13,55 +13,52 @@ endif
 
 let colors_name = "light"
 
-hi Normal guifg=Black guibg=grey90
+hi Normal guifg=Black guibg=grey90 ctermbg=White ctermfg=Black
 
 " Groups used in the 'highlight' and 'guicursor' options default value.
-hi ErrorMsg guibg=Red guifg=White
-hi IncSearch gui=reverse
-hi ModeMsg gui=bold
-hi StatusLine gui=reverse,bold
-hi StatusLineNC gui=reverse
-hi VertSplit gui=reverse
-hi Visual guibg=grey75
-hi VisualNOS gui=underline,bold
-hi DiffText gui=bold guibg=Red
-hi Cursor guibg=DarkGreen guifg=White
-hi lCursor guibg=DarkBlue guifg=White
-hi Directory guifg=DarkBlue
-hi LineNr guifg=#C05000 guibg=White
-hi MoreMsg gui=bold guifg=SeaGreen
-hi NonText gui=bold guifg=DarkBlue guibg=grey93
-hi Question gui=bold guifg=Blue
-hi Search guibg=#D06030 guifg=White
-hi SpecialKey guifg=DarkBlue
-hi Title gui=bold guifg=DarkMagenta
-hi WarningMsg guifg=Red
-hi WildMenu guibg=DarkOrange guifg=White
-hi Folded guibg=DarkGrey guifg=LightBlue
-hi FoldColumn guibg=Grey guifg=LightBlue
-hi DiffAdd guibg=LightBlue
-hi DiffChange guibg=LightMagenta
-hi DiffDelete gui=bold guifg=Blue guibg=DarkCyan
-hi CursorLine guibg=grey60
-hi CursorColumn guibg=grey82
-hi ColorColumn guibg=#F0E5FF
-hi Conceal guifg=#009000 guibg=grey90
+hi ErrorMsg guibg=Red guifg=White ctermbg=DarkRed ctermfg=White
+hi IncSearch gui=reverse cterm=reverse
+hi ModeMsg gui=bold cterm=reverse,bold
+hi StatusLine gui=reverse,bold cterm=reverse,bold
+hi StatusLineNC gui=reverse cterm=reverse
+hi VertSplit gui=reverse cterm=reverse
+hi Visual guibg=grey75 ctermbg=LightGrey
+hi VisualNOS gui=underline,bold cterm=underline,bold
+hi DiffText gui=bold guibg=Red cterm=bold ctermbg=Red
+hi nCursor guibg=DarkGreen guifg=White ctermbg=DarkGreen ctermfg=White
+hi iCursor guibg=DarkBlue guifg=White ctermbg=Cyan ctermfg=White
+hi Directory guifg=DarkBlue ctermfg=DarkBlue
+hi LineNr guifg=#C05000 guibg=White ctermfg=DarkRed ctermbg=White
+hi MoreMsg gui=bold guifg=SeaGreen cterm=bold ctermfg=Green
+hi NonText gui=bold guifg=DarkBlue guibg=grey93 ctermfg=DarkBlue
+hi Question gui=bold guifg=Blue ctermfg=Blue
+hi Search guibg=#D06030 guifg=White ctermbg=Brown ctermfg=White
+hi SpecialKey guifg=DarkBlue cterm=bold ctermfg=DarkBlue
+hi Title gui=bold guifg=DarkMagenta cterm=bold ctermfg=DarkMagenta
+hi WarningMsg guifg=Red ctermfg=Red
+hi WildMenu guibg=DarkOrange guifg=White ctermbg=Brown ctermfg=White
+hi Folded guibg=DarkGrey guifg=LightBlue ctermbg=DarkGrey ctermfg=LightBlue
+hi FoldColumn guibg=Grey guifg=LightBlue ctermbg=Grey ctermfg=LightBlue
+hi DiffAdd guibg=LightBlue ctermbg=LightBlue
+hi DiffChange guibg=LightMagenta ctermbg=LightMagenta
+hi DiffDelete gui=bold guifg=Blue guibg=DarkCyan ctermbg=DarkCyan ctermfg=Blue
+hi ColorColumn guibg=#F0E5FF ctermbg=LightGrey
+hi Conceal guifg=#009000 guibg=grey90 ctermbg=White
 
 " Groups for syntax highlighting
-hi Constant guifg=#B05000 gui=bold
-hi Special guifg=#B000B0
-if &t_Co > 8
-  hi Statement guifg=#0000A0 gui=bold
-endif
-hi Ignore guifg=grey80
-hi Identifier guifg=DarkCyan gui=bold
-hi PreProc guifg=Purple gui=bold
+hi Constant guifg=#B05000 gui=bold ctermfg=DarkRed
+hi Special guifg=#B000B0 ctermfg=DarkBlue
+hi Statement guifg=#0000A0 gui=bold cterm=bold ctermfg=DarkMagenta
+hi Ignore guifg=grey80 ctermfg=LightGrey
+hi Identifier guifg=DarkCyan gui=bold ctermfg=Blue cterm=bold
+hi PreProc guifg=Purple gui=bold ctermfg=DarkMagenta cterm=bold
+hi Comment guifg=DarkBlue ctermfg=LightBlue
 
 " language specific colors
 
 " ruby:
-hi rubyBlock guifg=Black gui=bold
+hi rubyBlock guifg=Black gui=bold ctermfg=Black cterm=bold
 
 " Additional options
-hi ExtraWhitespace guibg=red
+hi ExtraWhitespace guibg=red ctermbg=Red
 autocmd BufWinEnter * let m=matchadd('ExtraWhitespace', '\s\+$', 10)

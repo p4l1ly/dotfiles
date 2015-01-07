@@ -11,9 +11,9 @@ if exists("syntax_on")
   syntax reset
 endif
 
-let colors_name = "evening2"
+let colors_name = "dark"
 
-hi Normal ctermbg=DarkGrey ctermfg=White guifg=White guibg=black
+hi Normal ctermbg=Black ctermfg=White guifg=White guibg=black
 
 " Groups used in the 'highlight' and 'guicursor' options default value.
 hi ErrorMsg term=standout ctermbg=DarkRed ctermfg=White guibg=Red guifg=White
@@ -42,9 +42,7 @@ hi FoldColumn term=standout ctermbg=LightGrey ctermfg=DarkBlue guibg=Grey guifg=
 hi DiffAdd term=bold ctermbg=DarkBlue guibg=DarkBlue
 hi DiffChange term=bold ctermbg=DarkMagenta guibg=DarkMagenta
 hi DiffDelete term=bold ctermfg=Blue ctermbg=DarkCyan gui=bold guifg=Blue guibg=DarkCyan
-hi CursorLine term=underline cterm=underline guibg=grey40
-hi CursorColumn term=reverse ctermbg=Black guibg=grey18
-hi ColorColumn guibg=#301000 ctermbg=0
+hi ColorColumn guibg=#301000 ctermbg=DarkGrey
 hi Conceal guifg=#FF70FF guibg=black
 
 " Groups for syntax highlighting

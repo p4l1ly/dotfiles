@@ -5,7 +5,6 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-export PATH=$HOME/.cabal/bin:$HOME/.gem/ruby/2.1.0/bin:$PATH
 export HISTCONTROL=ignoredups
 
 export HISTFILESIZE=100000

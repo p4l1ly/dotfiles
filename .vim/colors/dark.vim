@@ -42,7 +42,7 @@ hi FoldColumn term=standout ctermbg=LightGrey ctermfg=DarkBlue guibg=Grey guifg=
 hi DiffAdd term=bold ctermbg=DarkBlue guibg=DarkBlue
 hi DiffChange term=bold ctermbg=DarkMagenta guibg=DarkMagenta
 hi DiffDelete term=bold ctermfg=Blue ctermbg=DarkCyan gui=bold guifg=Blue guibg=DarkCyan
-hi ColorColumn guibg=#301000 ctermbg=DarkGrey
+hi ColorColumn guibg=#301000 ctermbg=DarkBlue
 hi Conceal guifg=#FF70FF guibg=black
 
 " Groups for syntax highlighting

@@ -56,5 +56,5 @@ endif
 hi Ignore ctermfg=DarkGrey guifg=grey20
 
 " Additional options
-hi ExtraWhitespace guibg=red
+hi ExtraWhitespace guibg=red ctermbg=red
 autocmd BufWinEnter * let m=matchadd('ExtraWhitespace', '\s\+$', 10)

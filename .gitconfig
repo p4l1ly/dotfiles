@@ -7,3 +7,5 @@
 	autolf = true
 [push]
 	default = simple
+[alias]
+	rm-deleted = !git diff --diff-filter=D --name-only -z | xargs -0 git rm

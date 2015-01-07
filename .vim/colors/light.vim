@@ -52,7 +52,7 @@ hi Statement guifg=#0000A0 gui=bold cterm=bold ctermfg=DarkMagenta
 hi Ignore guifg=grey80 ctermfg=LightGrey
 hi Identifier guifg=DarkCyan gui=bold ctermfg=Blue cterm=bold
 hi PreProc guifg=Purple gui=bold ctermfg=DarkMagenta cterm=bold
-hi Comment guifg=DarkBlue ctermfg=LightBlue
+hi Comment guifg=DarkBlue ctermfg=Blue
 
 " language specific colors
 

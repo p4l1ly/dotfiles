@@ -33,6 +33,8 @@ set tabstop=8       " <Tab> in file is shown as 8 spaces
 set softtabstop=2   " move two columns to right when pushing <Tab>
 set noshiftround    " round indent to multiple of shiftwidth
 set expandtab       " when using <Tab>, insert spaces instead
+set colorcolumn=81
+set textwidth=80
 
 nmap []p o<Space><BS><ESC>p
 nmap []P O<Space><BS><ESC>p

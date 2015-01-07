@@ -15,6 +15,14 @@ let colors_name = "light"
 
 hi Normal guifg=Black guibg=grey90 ctermbg=White ctermfg=Black
 
+if &term =~ "xterm\\|rxvt"
+  " use an orange cursor in insert mode
+  let &t_SI = "\<Esc>]12;grey\x7"
+  " use a red cursor otherwise
+  let &t_EI = "\<Esc>]12;grey\x7"
+  silent !echo -ne "\033]12;grey\007"
+endif
+
 " Groups used in the 'highlight' and 'guicursor' options default value.
 hi ErrorMsg guibg=Red guifg=White ctermbg=DarkRed ctermfg=White
 hi IncSearch gui=reverse cterm=reverse

@@ -6,4 +6,4 @@
 	autocrlf = false
 	autolf = true
 [push]
-	default = simple
+	default = matching

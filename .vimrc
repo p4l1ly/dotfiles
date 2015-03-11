@@ -1,3 +1,4 @@
+set dir=~/.backup
 set encoding=utf-8
 let g:haskell_conceal=0
 

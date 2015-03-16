@@ -23,6 +23,7 @@
 
 # vim history, etc...
 .viminfo
+.viminfo.tmp
 
 # xmonad errors
 .xmonad/xmonad.errors
@@ -61,3 +62,23 @@
 .winetest/*
 
 .bundler/*
+
+.SchematicFrame
+.cvpcb
+.darcs/
+.dbshell
+.dia/
+.eeschema
+.gerbview
+.gstreamer-0.10/
+.ipython/
+.kbdReminder-sk-erb.png
+.kicad
+.kicad-share/
+.kicad_common
+.mongorc.js
+.pcb_calculator
+.pcbnew
+.windows-serial
+.wine32/
+kicad-*

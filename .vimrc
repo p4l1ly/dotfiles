@@ -12,6 +12,8 @@ set hlsearch            " highlight the last search pattern
 set number              " show line numbers
 set nowrap              " no linewrapping
 
+set dir=~/.backup
+
 if has('mouse')
   set mouse=a
 endif

@@ -82,3 +82,5 @@
 .windows-serial
 .wine32/
 kicad-*
+
+.backup/*

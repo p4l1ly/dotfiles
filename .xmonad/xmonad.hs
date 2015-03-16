@@ -4,10 +4,9 @@ import Control.Applicative
 
 import XMonad
 import XMonad.Hooks.DynamicLog
-import XMonad.Hooks.FadeInactive
 import XMonad.Hooks.EwmhDesktops
 import XMonad.Layout.ResizableTile
-import XMonad.Layout.SimpleFloat
+import XMonad.Layout.NoBorders
 import qualified XMonad.StackSet as W
 
 spawn' = spawn . ("/home/pallly/bin/" ++)
@@ -48,15 +47,12 @@ myConfig = ewmh defaultConfig
   , modMask     = mod4Mask
   , borderWidth = 1
 
-  , manageHook      = composeAll [ appName =? "display" --> doFloat ]
-                  <+> manageHook defaultConfig
-  , layoutHook      = ResizableTall 1 (3/100) (1/2) []
-                  ||| Full
-                  ||| simpleFloat
-  , logHook         = fadeInactiveLogHook 0.85
+  , layoutHook      = ResizableTall 1 (1/100) (2/3) []
+                  ||| noBorders Full
+  , logHook         = dynamicLog
   , handleEventHook = handleEventHook defaultConfig <+> fullscreenEventHook
 
-  , keys = \x -> keys defaultConfig x `M.union` myKeys x
+  , keys = \x -> myKeys x `M.union` keys defaultConfig x
   }
 
 main = xmonad =<< statusBar "xmobar" xmobarPP toggleStrutsKey myConfig

@@ -47,3 +47,6 @@ colorscheme dark
 
 "F10 shows highlighting style under cursor
 map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<' . synIDattr(synID(line("."),col("."),0),"name") . "> lo<" .  synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
+
+"F9 toggles cursorcolumn
+map <F9> :set cursorcolumn!<CR>

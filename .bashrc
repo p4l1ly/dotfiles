@@ -16,25 +16,7 @@ export EDITOR=/usr/bin/vim
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
-force_color_prompt=yes
-if [ -n "$force_color_prompt" ]; then
-    if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
-	# We have color support; assume it's compliant with Ecma-48
-	# (ISO/IEC-6429). (Lack of such support is extremely rare, and such
-	# a case would tend to support setf rather than setaf.)
-	color_prompt=yes
-    else
-	color_prompt=
-    fi
-fi
-
-if [ "$color_prompt" = yes ]; then
-    PS1='\[\e[0;32m\]\u\[\e[m\] \[\e[1;34m\]\W\[\e[m\]\[\e[1;32m\]\$\[\e[m\] \[\e[;0m\]'
-else
-    PS1='\u \W\$ '
-fi
-unset color_prompt force_color_prompt
-
+PS1='\[\e[0;32m\]\u\[\e[m\] \[\e[1;34m\]\W\[\e[m\]\[\e[1;32m\]\$\[\e[m\] \[\e[;0m\]'
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then

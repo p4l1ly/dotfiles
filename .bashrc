@@ -52,3 +52,5 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 alias tmux="TERM=screen-256color tmux"
+
+fortune | cowsay -f "$(ls /usr/share/cowsay-3.03/cows/ | sort -R | head -n1)"

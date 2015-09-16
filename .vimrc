@@ -44,7 +44,7 @@ command! -range=% Tcss <line1>,<line2>Tab /^[^:]*:/l0l1
 command! -range=% Tdm <line1>,<line2>Tab/^\s\+property\s:\w\+,
 map Y y$
 
-colorscheme dark
+colorscheme light
 
 "F10 shows highlighting style under cursor
 map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<' . synIDattr(synID(line("."),col("."),0),"name") . "> lo<" .  synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>

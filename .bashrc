@@ -29,7 +29,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='\[\e[0;32m\]\u\[\e[m\] \[\e[1;34m\]\W\[\e[m\]\[\e[1;32m\]\$\[\e[m\] \[\e[;37m\]'
+    PS1='\[\e[0;32m\]\u\[\e[m\] \[\e[1;34m\]\W\[\e[m\]\[\e[1;32m\]\$\[\e[m\] \[\e[;0m\]'
 else
     PS1='\u \W\$ '
 fi
@@ -43,3 +43,5 @@ if [ -x /usr/bin/dircolors ]; then
     alias ls='ls --color=auto'
     alias grep='grep --color=auto'
 fi
+
+alias tmux="TERM=screen-256color tmux"

@@ -11,6 +11,7 @@ set incsearch		" do incremental searching
 set hlsearch            " highlight the last search pattern
 set number              " show line numbers
 set nowrap              " no linewrapping
+set nostartofline       " keep column when line jumping
 
 set dir=~/.backup
 
@@ -37,6 +38,7 @@ set noshiftround    " round indent to multiple of shiftwidth
 set expandtab       " when using <Tab>, insert spaces instead
 set colorcolumn=81
 set textwidth=80
+set nojoinspaces    " when using J or gq, do not make two spaces after period
 
 nmap []p o<Space><BS><ESC>p
 nmap []P O<Space><BS><ESC>p
@@ -48,3 +50,6 @@ colorscheme light
 
 "F10 shows highlighting style under cursor
 map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<' . synIDattr(synID(line("."),col("."),0),"name") . "> lo<" .  synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
+
+"F9 toggles cursorcolumn
+map <F9> :set cursorcolumn!<CR>

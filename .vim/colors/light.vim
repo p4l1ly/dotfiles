@@ -51,6 +51,7 @@ hi DiffAdd guibg=LightBlue ctermbg=LightBlue
 hi DiffChange guibg=LightMagenta ctermbg=LightMagenta
 hi DiffDelete gui=bold guifg=Blue guibg=DarkCyan ctermbg=DarkCyan ctermfg=Blue
 hi ColorColumn guibg=#F0E5FF ctermbg=LightGrey
+hi CursorColumn guibg=#D0D0D0 ctermbg=LightGrey
 hi Conceal guifg=#009000 guibg=grey90 ctermbg=White
 
 " Groups for syntax highlighting

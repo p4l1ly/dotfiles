@@ -5,6 +5,8 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+source /etc/bash/bashrc.d/bash_completion.sh
+
 export HISTCONTROL=ignoredups
 
 export HISTFILESIZE=100000

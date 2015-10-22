@@ -48,5 +48,6 @@ colorscheme light
 "F10 shows highlighting style under cursor
 map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<' . synIDattr(synID(line("."),col("."),0),"name") . "> lo<" .  synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
 
-"F9 toggles cursorcolumn
+"F9 toggles cursorcolumn, F8 toggles cursorline
 map <F9> :set cursorcolumn!<CR>
+map <F8> :set cursorline!<CR>
